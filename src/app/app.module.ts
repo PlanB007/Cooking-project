@@ -1,3 +1,4 @@
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,7 +20,8 @@ import { ListComponent } from './feature/recipe-book/list/list.component';
     EditComponent,
     DetailComponent,
     ItemComponent,
-    ListComponent
+    ListComponent,
+    BasicHighlightDirective
   ],
   imports: [
     BrowserModule
