@@ -10,6 +10,7 @@ import { EditComponent } from './feature/shopping-list/edit/edit.component';
 import { DetailComponent } from './feature/recipe-book/detail/detail.component';
 import { ItemComponent } from './feature/recipe-book/item/item.component';
 import { ListComponent } from './feature/recipe-book/list/list.component';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ListComponent } from './feature/recipe-book/list/list.component';
     DetailComponent,
     ItemComponent,
     ListComponent,
-    BasicHighlightDirective
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule
