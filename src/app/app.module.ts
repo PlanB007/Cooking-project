@@ -13,6 +13,14 @@ import { ListComponent } from './feature/recipe-book/list/list.component';
 import { BetterHighlightDirective } from './shared/better-highlight/better-highlight.directive';
 import { DropdownDirective } from './shared/dropdown-toggle/dropdown.directive';
 import { ShoppingListService } from './feature/shopping-list/shopping-list.service';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'list', component: ShoppingListComponent },
+  { path: 'recipe', component: RecipeBookComponent },
+];
+
+export const appRouting = RouterModule.forRoot(routes);
 
 @NgModule({
   declarations: [
@@ -29,7 +37,8 @@ import { ShoppingListService } from './feature/shopping-list/shopping-list.servi
     DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
